@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « RESEAUX »
+#  Interrupteurs - LISTE « RESEAUX »
 #  Réseaux sociaux. Activée ou non par la ligne RESEAUX de controle.txt.
 # ======================================================================================
 #

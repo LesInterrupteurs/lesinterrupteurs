@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « YOUTUBE_INTEGRE »
+#  Interrupteurs - LISTE « YOUTUBE_INTEGRE »
 #  Lecteurs YouTube intégrés dans d'autres sites (PIX, pages de cours...).
 #  Activée ou non par la ligne YOUTUBE_INTEGRE de controle.txt.
 # ======================================================================================

@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « JEUX »
+#  Interrupteurs - LISTE « JEUX »
 #  Portails de jeux en ligne, jeux « io », plateformes de jeux, échecs.
 #  Activée ou non par la ligne JEUX de controle.txt. Exemple d'usage : jeu autorisé
 #  en récompense avec « JEUX: ALLOWED until 16:30 ».

@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « IA_IMAGES »
+#  Interrupteurs - LISTE « IA_IMAGES »
 #  Assistants et chatbots IA, outils de rédaction/réécriture assistée,
 #  générateurs d'images et de vidéo.
 #  Activée ou non par la ligne IA_IMAGES de controle.txt.

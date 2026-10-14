@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « TELECHARGEMENTS »
+#  Interrupteurs - LISTE « TELECHARGEMENTS »
 #  Sites de téléchargement de logiciels et d'applications (installer un programme
 #  est interdit aux élèves). Activée ou non par la ligne TELECHARGEMENTS de controle.txt.
 #  CATÉGORIE PERMANENTE : elle s'applique aussi le midi, le soir et le week-end

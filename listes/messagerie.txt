@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « MESSAGERIE »
+#  Interrupteurs - LISTE « MESSAGERIE »
 #  Messageries instantanées (hors e-mail : voir WEBMAIL).
 #  Activée ou non par la ligne MESSAGERIE de controle.txt.
 # ======================================================================================

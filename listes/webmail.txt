@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « WEBMAIL »
+#  Interrupteurs - LISTE « WEBMAIL »
 #  Boîtes e-mail personnelles et adresses jetables (empêche l'envoi de fichiers ou les
 #  échanges hors cadre de la classe).
 #  Activée ou non par la ligne WEBMAIL de controle.txt.

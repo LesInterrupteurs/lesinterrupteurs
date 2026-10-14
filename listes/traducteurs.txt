@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « TRADUCTEURS »
+#  Interrupteurs - LISTE « TRADUCTEURS »
 #  Traducteurs automatiques (utiles en langues, mais permettent de tricher).
 #  Activée ou non par la ligne TRADUCTEURS de controle.txt : vous pouvez donc
 #  l'ouvrir seulement pour les cours qui en ont besoin.

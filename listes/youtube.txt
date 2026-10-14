@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « YOUTUBE »
+#  Interrupteurs - LISTE « YOUTUBE »
 #  Le site YouTube lui-même : accueil, recherche, recommandations, chaînes.
 #  Activée ou non par la ligne YOUTUBE de controle.txt.
 #  Cas habituel pour PIX : YOUTUBE: BLOCKED + YOUTUBE_INTEGRE: ALLOWED

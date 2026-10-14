@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - LISTE « VIDEO »
+#  Interrupteurs - LISTE « VIDEO »
 #  Streaming vidéo et musique. YouTube n'est PAS ici : il a ses propres catégories
 #  (YOUTUBE et YOUTUBE_INTEGRE). Activée ou non par la ligne VIDEO de controle.txt.
 # ======================================================================================
