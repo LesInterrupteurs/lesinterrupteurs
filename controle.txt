@@ -1,0 +1,133 @@
+# ======================================================================================
+#  IAGuard - FICHIER DE CONTRÔLE
+#  C'est le SEUL fichier à modifier au quotidien. Les 17 postes le relisent
+#  toutes les 5 minutes (jusqu'à ~10 minutes avec le cache de GitHub).
+#  Pour modifier : bouton « crayon » dans GitHub, puis « Commit changes ».
+# ======================================================================================
+#
+# RÈGLES DE LECTURE
+#   - Une ligne commençant par # est un commentaire : elle est ignorée.
+#   - Les lignes vides sont ignorées.
+#   - Majuscules/minuscules et espaces multiples n'ont pas d'importance.
+#   - Encodage : gardez le fichier en UTF-8 (c'est le cas par défaut dans GitHub).
+#
+# ======================================================================================
+#  1) LES HORAIRES  (ligne HORAIRES)
+# ======================================================================================
+#  Les règles des catégories (section 2) ne s'appliquent QUE :
+#      - du lundi au vendredi,
+#      - et seulement à l'intérieur des plages horaires indiquées ci-dessous.
+#  EN DEHORS de ces plages (pause de midi, soir, nuit) et TOUT LE WEEK-END,
+#  tout est OUVERT, quelles que soient les lignes de la section 2 :
+#  même un « BLOCKED » ou un « BLOCKED until ... » est alors sans effet.
+#  Les jours fériés et les vacances sont traités comme des jours normaux.
+#
+#  EXCEPTION : les catégories PERMANENTES (section 3) ignorent ces horaires : elles
+#  s'appliquent aussi le midi, le soir, la nuit et le week-end.
+#
+#  Format :   HORAIRES: HH:MM-HH:MM, HH:MM-HH:MM
+#     - une ou plusieurs plages séparées par des virgules ;
+#     - heure locale du PC (le PC doit donc être à l'heure) ;
+#     - « 08:00 » ou « 8h00 » sont acceptés ; la fin de plage est exclue.
+#  Exemple actuel : blocage possible de 8h00 à 12h10 et de 13h15 à 17h30.
+#
+#  SÉCURITÉ : si la ligne HORAIRES est absente ou mal écrite (faute de frappe,
+#  plage incohérente comme 17:30-08:00...), TOUT EST OUVERT EN PERMANENCE
+#  et un avertissement est écrit dans le journal du poste.
+#  Une plage ne peut pas passer minuit : le soir et la nuit sont déjà couverts
+#  par « en dehors des plages ».
+#
+HORAIRES: 08:00-12:10, 13:15-17:30
+
+# ======================================================================================
+#  2) LES CATÉGORIES  (une ligne par catégorie)
+# ======================================================================================
+#  Format :   NOM_DE_LA_CATEGORIE:   POSITION
+#
+#  Les 4 positions possibles :
+#    ALLOWED                            ouvert, sans limite de durée
+#    BLOCKED                            fermé, sans limite de durée
+#    ALLOWED until 16:30                ouvert jusqu'à 16:30, puis BLOCKED
+#    BLOCKED until 2026-10-12 08:00     fermé jusqu'à cette date et heure, puis ALLOWED
+#
+#  Échéances (« until ») :
+#    - Date complète : AAAA-MM-JJ HH:MM   (ex. 2026-10-12 08:00). Valable à n'importe
+#      quel jour.
+#    - Heure seule : HH:MM ou HHhMM       (ex. 16:30). Valable UNIQUEMENT le jour où
+#      la ligne est lue pour la première fois. Pour la réutiliser un autre jour, changez
+#      l'heure ou écrivez la date complète.
+#    - Rappel : l'échéance n'a d'effet que pendant les plages de la section 1.
+#      En dehors des plages, tout est de toute façon ouvert.
+#
+#  Exemples (à copier-coller, en retirant le # devant) :
+#    JEUX:   ALLOWED until 16:30              <- jeux autorisés les dernières minutes du cours
+#    VIDEO:  BLOCKED until 2026-10-12 08:00   <- fermé jusqu'à lundi 8h00, puis ouvert
+#
+#  SÉCURITÉS (« en cas de doute, on revient à l'état initial : ALLOWED ») :
+#    - Ligne mal écrite (ex. « BLOKED », échéance illisible) : cette catégorie est
+#      ALLOWED, les autres ne sont pas touchées. L'erreur est notée dans le journal.
+#    - Catégorie absente de ce fichier : ALLOWED.
+#    - Fichier illisible (panne de GitHub ou du réseau) :
+#        * moins de 3 jours : les dernières règles lues restent appliquées
+#          (les échéances continuent d'être évaluées avec l'horloge du PC) ;
+#        * plus de 3 jours : tout repasse en ALLOWED, SAUF les catégories permanentes
+#          (section 3), qui gardent leur dernière position lue sans limite de durée.
+#    - Un site présent dans plusieurs catégories est bloqué dès que l'une d'elles
+#      est BLOCKED.
+#
+#  AJOUTER UNE CATÉGORIE : ajoutez une ligne ci-dessous ET créez le fichier
+#  correspondant dans le dossier listes/ (nom en minuscules, extension .txt :
+#  la catégorie MA_CATEGORIE lit listes/ma_categorie.txt). Rien à refaire sur les postes.
+#
+#  Catégories actuelles :
+#    IA_IMAGES        assistants IA, outils de rédaction assistée, générateurs d'images/vidéo
+#    TRADUCTEURS      traducteurs automatiques
+#    JEUX             sites de jeux, plateformes, échecs
+#    RESEAUX          réseaux sociaux (LinkedIn reste libre)
+#    MESSAGERIE       messageries instantanées (WhatsApp, Discord, Snapchat...)
+#    WEBMAIL          boîtes mail personnelles et adresses jetables
+#    VIDEO            streaming vidéo et musique (YouTube a ses propres catégories)
+#    YOUTUBE          le site YouTube lui-même
+#    YOUTUBE_INTEGRE  les vidéos YouTube intégrées dans d'autres sites (PIX, cours...)
+#    TELECHARGEMENTS  sites de téléchargement de logiciels (PERMANENTE, voir section 3)
+#    EXTENSIONS       extensions des navigateurs : toutes interdites, sans liste (PERMANENTE)
+#                     (pas de fichier dans listes/ pour EXTENSIONS : BLOCKED = aucune extension
+#                      ne peut être installée, et celles déjà installées sont désactivées
+#                      dans Chrome et Edge ; ALLOWED = extensions de nouveau permises)
+#
+#  Cas habituel pour PIX : YOUTUBE bloqué, YOUTUBE_INTEGRE ouvert.
+#  (YOUTUBE_INTEGRE sert aussi d'exception à YOUTUBE : voir listes/youtube_integre.txt)
+#
+IA_IMAGES:        BLOCKED
+TRADUCTEURS:      BLOCKED
+JEUX:             BLOCKED
+RESEAUX:          BLOCKED
+MESSAGERIE:       BLOCKED
+WEBMAIL:          BLOCKED
+VIDEO:            BLOCKED
+YOUTUBE:          BLOCKED
+YOUTUBE_INTEGRE:  ALLOWED
+TELECHARGEMENTS:  BLOCKED
+EXTENSIONS:       BLOCKED
+
+# ======================================================================================
+#  3) LES CATÉGORIES PERMANENTES  (ligne PERMANENT)
+# ======================================================================================
+#  Une catégorie permanente ignore la ligne HORAIRES : elle est appliquée tout le temps
+#  (midi, soir, nuit, week-end). Ses positions (ALLOWED, BLOCKED, ... until ...) restent
+#  utilisables pour la lever ponctuellement, par exemple :
+#      TELECHARGEMENTS:  ALLOWED until 2026-10-14 18:00
+#
+#  TELECHARGEMENTS et EXTENSIONS sont permanentes PAR DÉFAUT (réglage du script) :
+#  elles le restent même si la ligne ci-dessous est absente ou mal écrite.
+#  La ligne PERMANENT sert à AJOUTER d'autres catégories (séparées par des virgules),
+#  par exemple :   PERMANENT: JEUX, RESEAUX
+#  Pour qu'elle ne change rien, laissez-la vide ou gardez-la en commentaire.
+#
+#  SÉCURITÉ SPÉCIFIQUE : une panne de GitHub, même de plusieurs semaines, ne rouvre
+#  JAMAIS une catégorie permanente (elle garde sa dernière position lue). Si GitHub
+#  disparaît définitivement, il faudra la lever sur chaque poste (voir PROCEDURE-TEST.md :
+#  désinstallation avec le compte admin).
+#
+# PERMANENT: JEUX, RESEAUX
+PERMANENT:
