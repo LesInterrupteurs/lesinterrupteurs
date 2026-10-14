@@ -1,0 +1,28 @@
+# ======================================================================================
+#  IAGuard - LISTE « YOUTUBE »
+#  Le site YouTube lui-même : accueil, recherche, recommandations, chaînes.
+#  Activée ou non par la ligne YOUTUBE de controle.txt.
+#  Cas habituel pour PIX : YOUTUBE: BLOCKED + YOUTUBE_INTEGRE: ALLOWED
+#  (le site est fermé, mais les vidéos intégrées dans les pages restent lisibles).
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# NB : youtube.com couvre aussi m.youtube.com et music.youtube.com.
+# VOLONTAIREMENT ABSENTS : googlevideo.com, ytimg.com, ggpht.com (flux, vignettes et images
+# nécessaires aux vidéos intégrées). Le blocage porte sur la navigation vers les pages,
+# pas sur ces ressources chargées en arrière-plan.
+# ======================================================================================
+
+youtube.com
+youtu.be
+youtubekids.com
+
+# --- Interfaces alternatives qui permettent de regarder YouTube en contournant le blocage
+#     (elles changent régulièrement d'adresse : à compléter au fil du temps)
+yewtu.be
+piped.video
+invidious.io

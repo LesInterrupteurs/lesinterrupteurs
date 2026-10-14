@@ -1,0 +1,28 @@
+# ======================================================================================
+#  IAGuard - LISTE « YOUTUBE_INTEGRE »
+#  Lecteurs YouTube intégrés dans d'autres sites (PIX, pages de cours...).
+#  Activée ou non par la ligne YOUTUBE_INTEGRE de controle.txt.
+# ======================================================================================
+#
+# FONCTIONNEMENT PARTICULIER : cette liste est une liste « d'exceptions ».
+# La ligne spéciale ci-dessous (#!allow-exception, à ne pas modifier) signifie :
+#   - YOUTUBE_INTEGRE: ALLOWED -> ces adresses sont des EXCEPTIONS au blocage de YOUTUBE :
+#       youtube.com est fermé, mais les lecteurs intégrés (youtube.com/embed et
+#       youtube-nocookie.com) restent lisibles.
+#   - YOUTUBE_INTEGRE: BLOCKED -> ces adresses sont bloquées (les lecteurs intégrés
+#       ne fonctionnent plus).
+# Les 4 combinaisons :
+#   YOUTUBE BLOCKED + INTEGRE ALLOWED : site fermé, vidéos intégrées lisibles (cas habituel PIX)
+#   YOUTUBE BLOCKED + INTEGRE BLOCKED : tout YouTube fermé
+#   YOUTUBE ALLOWED + INTEGRE BLOCKED : site ouvert, lecteurs intégrés fermés (rare)
+#   YOUTUBE ALLOWED + INTEGRE ALLOWED : rien n'est bloqué
+#
+# FORMAT : un site (ou site/chemin) par ligne, en minuscules, sans « https:// » ni « www. ».
+# Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+#
+# À VÉRIFIER AU TEST : si un tuto PIX ouvre YouTube dans un onglet (lien) au lieu d'un
+# lecteur intégré, il sera bloqué quand YOUTUBE est BLOCKED.
+# ======================================================================================
+#!allow-exception
+youtube-nocookie.com
+youtube.com/embed

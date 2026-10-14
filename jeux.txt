@@ -1,0 +1,90 @@
+# ======================================================================================
+#  IAGuard - LISTE « JEUX »
+#  Portails de jeux en ligne, jeux « io », plateformes de jeux, échecs.
+#  Activée ou non par la ligne JEUX de controle.txt. Exemple d'usage : jeu autorisé
+#  en récompense avec « JEUX: ALLOWED until 16:30 ».
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines (« itch.io » couvre aussi nomdujeu.itch.io).
+#   « exemple.com/chemin » ne vise que ce chemin. Pas de joker (*).
+#   Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# VOLONTAIREMENT ABSENTS (outils pédagogiques ou usages mixtes) : scratch.mit.edu, kahoot.it,
+# quizlet.com, geoguessr.com (décision : laissé libre), le Wordle du New York Times.
+# LIMITE : les « unblocked games » hébergés sur Google Sites (sites.google.com/...) ne se
+# bloquent pas proprement par domaine. Repérez l'adresse précise et ajoutez-la ici.
+# Les élèves trouvent régulièrement de nouveaux sites : prévoir une mise à jour régulière.
+# ======================================================================================
+
+# --- Portails de jeux
+poki.com
+crazygames.com
+y8.com
+miniclip.com
+friv.com
+kongregate.com
+addictinggames.com
+armorgames.com
+newgrounds.com
+coolmathgames.com
+agame.com
+gamepix.com
+twoplayergames.org
+
+# --- Jeux « io » multijoueurs
+krunker.io
+agar.io
+slither.io
+diep.io
+shellshock.io
+skribbl.io
+
+# --- Plateformes de jeux
+roblox.com
+steampowered.com
+epicgames.com
+itch.io
+
+# --- Échecs
+chess.com
+lichess.org
+
+# --- Portails de jeux (ajouts : sites visités par les élèves)
+1001jeux.fr
+jeux-gratuits-online.org
+arcavo.org
+dinorunner.com
+poki.us.com
+bordeauxgames.com
+appliandroid.fr
+jeux.fr
+universflash.com
+myinstants.com
+
+# --- Portails de jeux (compléments)
+jeux.org
+gameduell.fr
+mousebreaker.com
+a10.com
+playdosgames.com
+kizi.com
+jeux-gratuits.com
+silvergames.com
+gamesgames.com
+gameflare.com
+mi9games.com
+hoodamath.com
+
+# --- Jeux rétro dans le navigateur
+retrogames.onl
+playretrogames.online
+
+# --- Cloud gaming et plateformes (compléments)
+play.geforcenow.com
+boosteroid.com
+xbox.com/play
+classic.minecraft.net
+gog.com
+battle.net

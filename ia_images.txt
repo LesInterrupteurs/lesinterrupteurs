@@ -1,0 +1,102 @@
+# ======================================================================================
+#  IAGuard - LISTE « IA_IMAGES »
+#  Assistants et chatbots IA, outils de rédaction/réécriture assistée,
+#  générateurs d'images et de vidéo.
+#  Activée ou non par la ligne IA_IMAGES de controle.txt.
+# ======================================================================================
+#
+# FORMAT (identique pour tous les fichiers du dossier listes/)
+#   - Un site par ligne, en minuscules, SANS « https:// » ni « www. ».
+#   - « exemple.com » bloque aussi tous ses sous-domaines (chat.exemple.com...).
+#   - « exemple.com/chemin » bloque seulement ce chemin et ce qui est dessous.
+#   - Une ligne commençant par # est un commentaire. Les lignes vides sont ignorées.
+#   - Pas de joker (*) : le script ignore les lignes mal formées (et le note au journal).
+#   - Le script refuse de bloquer certains domaines partagés (google.com, microsoft.com,
+#     github.com...) même s'ils figurent ici par erreur. Pour bloquer un service qui vit
+#     sur un tel domaine, indiquez son sous-domaine précis (ex. gemini.google.com).
+#
+# COMMENT AJOUTER UN SITE : ajoutez une ligne ci-dessous, « Commit changes » dans GitHub.
+# Les postes le prennent en compte à leur prochaine lecture. COMMENT EN RETIRER UN :
+# supprimez la ligne ou mettez # devant.
+#
+# VOLONTAIREMENT ABSENTS (servent à d'autres usages) : microsoft.com, azure.microsoft.com,
+# aws.amazon.com, nvidia.com (pilotes), baidu.com, tencent.com, adobe.com (Acrobat pour PIX),
+# canva.com, deepl.com (voir TRADUCTEURS), elevenlabs.io (utile en projets audio),
+# les sites d'entreprises d'IA sans interface pour élèves (anthropic.com, deepmind.google...).
+# Cette liste doit être mise à jour régulièrement : les services et leurs adresses évoluent.
+# ======================================================================================
+
+# --- Assistants et chatbots
+chatgpt.com
+openai.com
+gemini.google.com
+aistudio.google.com
+notebooklm.google.com
+copilot.microsoft.com
+claude.ai
+perplexity.ai
+mistral.ai
+deepseek.com
+grok.com
+x.ai
+meta.ai
+poe.com
+character.ai
+
+# --- Chatbots chinois
+qwen.ai
+z.ai
+kimi.com
+moonshot.ai
+minimax.io
+doubao.com
+yiyan.baidu.com
+ernie.baidu.com
+hunyuan.tencent.com
+
+# --- Autres services s'appuyant sur des modèles d'IA
+openrouter.ai
+build.nvidia.com
+duck.ai
+you.com
+phind.com
+gamma.app
+gauthmath.com
+brainly.com
+chatpdf.com
+pi.ai
+use.ai
+
+# --- Réécriture et rédaction assistée
+quillbot.com
+writesonic.com
+grammarly.com
+jasper.ai
+copy.ai
+rytr.me
+wordtune.com
+
+# --- Générateurs d'images et de vidéo
+midjourney.com
+leonardo.ai
+ideogram.ai
+craiyon.com
+nightcafe.studio
+lexica.art
+playground.com
+dreamstudio.ai
+firefly.adobe.com
+designer.microsoft.com
+runwayml.com
+lumalabs.ai
+bfl.ai
+stability.ai
+
+# --- Hugging Face : seulement le chat et les « Spaces » (le reste du site reste ouvert,
+#     utile pour les cours de programmation et d'IA)
+huggingface.co/chat
+huggingface.co/spaces
+hf.space
+
+# NB : le « mode IA » et les résumés IA de Google ne se bloquent pas par domaine
+# (ils sont sur google.com). Voir le réglage du moteur de recherche (udm=14).

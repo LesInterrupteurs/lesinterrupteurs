@@ -1,0 +1,32 @@
+# ======================================================================================
+#  IAGuard - LISTE « MESSAGERIE »
+#  Messageries instantanées (hors e-mail : voir WEBMAIL).
+#  Activée ou non par la ligne MESSAGERIE de controle.txt.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# VOLONTAIREMENT ABSENT : Teams et la messagerie Microsoft de l'établissement
+# (teams.microsoft.com, outlook.office.com...) : ils servent aux cours.
+# Les messageries de Facebook et d'Instagram sont couvertes par la catégorie RESEAUX.
+# ======================================================================================
+
+# --- WhatsApp
+whatsapp.com
+whatsapp.net
+# --- Discord
+discord.com
+discord.gg
+discordapp.com
+# --- Autres
+snapchat.com
+telegram.org
+t.me
+messenger.com
+signal.org
+viber.com
+wechat.com
+kik.com

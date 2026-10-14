@@ -1,0 +1,56 @@
+# ======================================================================================
+#  IAGuard - LISTE « WEBMAIL »
+#  Boîtes e-mail personnelles et adresses jetables (empêche l'envoi de fichiers ou les
+#  échanges hors cadre de la classe).
+#  Activée ou non par la ligne WEBMAIL de controle.txt.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# ATTENTION - VOLONTAIREMENT ABSENTS : ces adresses servent à la connexion aux outils de
+# l'établissement et au OneDrive personnel de certains élèves. Ne les ajoutez JAMAIS ici :
+#   outlook.office.com, outlook.office365.com, login.microsoftonline.com  (Office, Teams)
+#   accounts.google.com                                                   (connexion Google)
+#   login.live.com, onedrive.live.com                                     (comptes Microsoft perso, OneDrive)
+# On bloque uniquement les boîtes mail elles-mêmes (ex. outlook.live.com, mail.google.com).
+# À tester sur le poste pilote : la connexion à Office/Teams/OneDrive doit rester possible.
+# ======================================================================================
+
+# --- Gmail
+mail.google.com
+gmail.com
+# --- Outlook personnel
+outlook.live.com
+hotmail.com
+# --- Yahoo
+mail.yahoo.com
+# --- Proton
+mail.proton.me
+proton.me
+protonmail.com
+# --- Orange
+webmail.orange.fr
+messagerie.orange.fr
+# --- Free
+webmail.free.fr
+imp.free.fr
+# --- La Poste
+mail.laposte.net
+# --- SFR
+webmail.sfr.fr
+# --- Autres fournisseurs
+mail.aol.com
+mail.gmx.com
+mail.yandex.com
+mail.zoho.com
+mail.tutanota.com
+app.tuta.com
+
+# --- Adresses jetables (servent à s'inscrire sur des sites sans adresse réelle)
+yopmail.com
+temp-mail.org
+guerrillamail.com
+10minutemail.com

@@ -1,0 +1,31 @@
+# ======================================================================================
+#  IAGuard - LISTE « TELECHARGEMENTS »
+#  Sites de téléchargement de logiciels et d'applications (installer un programme
+#  est interdit aux élèves). Activée ou non par la ligne TELECHARGEMENTS de controle.txt.
+#  CATÉGORIE PERMANENTE : elle s'applique aussi le midi, le soir et le week-end
+#  (voir la ligne PERMANENT de controle.txt), et n'est jamais rouverte par une panne de GitHub.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# POUR INSTALLER UN LOGICIEL VOUS-MÊME (compte admin) : passer temporairement
+#   « TELECHARGEMENTS: ALLOWED until AAAA-MM-JJ HH:MM » dans controle.txt,
+#   ou télécharger l'installateur depuis un autre poste / une clé USB.
+# LIMITE : ce blocage vise la navigation vers ces sites, pas l'installation elle-même.
+#   Un fichier .exe obtenu ailleurs (clé USB, autre site absent de la liste) n'est pas bloqué.
+# ======================================================================================
+
+# --- Sites de téléchargement de logiciels
+softonic.com
+malavida.com
+appwesome.com
+pdf-sprint.com
+
+# --- Navigateurs alternatifs (Opera a été installé par un élève)
+opera.com
+
+# --- Boutique d'applications Android (seul ce sous-domaine : google.com reste ouvert)
+play.google.com

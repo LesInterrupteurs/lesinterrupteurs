@@ -1,0 +1,52 @@
+# ======================================================================================
+#  IAGuard - LISTE « VIDEO »
+#  Streaming vidéo et musique. YouTube n'est PAS ici : il a ses propres catégories
+#  (YOUTUBE et YOUTUBE_INTEGRE). Activée ou non par la ligne VIDEO de controle.txt.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# VOLONTAIREMENT ABSENTS : vimeo.com (nombreux tutos pédagogiques), france.tv / Lumni,
+# arte.tv, ina.fr (contenus éducatifs), apple.com et amazon.com (usages multiples : pour
+# la musique on ne cible que music.apple.com et music.amazon.*).
+# La musique de YouTube (music.youtube.com) est couverte par la catégorie YOUTUBE.
+# ======================================================================================
+
+# --- Films et séries
+netflix.com
+disneyplus.com
+primevideo.com
+max.com
+hbomax.com
+canalplus.com
+mycanal.fr
+crunchyroll.com
+molotov.tv
+mytf1.fr
+6play.fr
+
+# --- Direct et vidéos courtes
+twitch.tv
+kick.com
+rumble.com
+dailymotion.com
+# dai.ly = liens courts de Dailymotion
+dai.ly
+bilibili.com
+
+# --- Musique en streaming
+spotify.com
+deezer.com
+music.apple.com
+soundcloud.com
+tidal.com
+music.amazon.fr
+music.amazon.com
+bandcamp.com
+qobuz.com
+
+# --- Ajouts
+popflix.fr

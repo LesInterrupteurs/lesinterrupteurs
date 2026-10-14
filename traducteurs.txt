@@ -1,0 +1,25 @@
+# ======================================================================================
+#  IAGuard - LISTE « TRADUCTEURS »
+#  Traducteurs automatiques (utiles en langues, mais permettent de tricher).
+#  Activée ou non par la ligne TRADUCTEURS de controle.txt : vous pouvez donc
+#  l'ouvrir seulement pour les cours qui en ont besoin.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Les lignes commençant par # et les lignes vides sont ignorées. Pas de joker (*).
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# VOLONTAIREMENT ABSENT : la traduction intégrée de Chrome, qui passe par un domaine
+# technique de Google dont dépendent d'autres services.
+# ======================================================================================
+
+deepl.com
+translate.google.com
+# translate.goog = pages traduites servies par Google Traduction (souvent utilisé pour contourner les filtres)
+translate.goog
+reverso.net
+linguee.com
+translator.microsoft.com
+translate.yandex.com
+papago.naver.com

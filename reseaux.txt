@@ -1,0 +1,45 @@
+# ======================================================================================
+#  IAGuard - LISTE « RESEAUX »
+#  Réseaux sociaux. Activée ou non par la ligne RESEAUX de controle.txt.
+# ======================================================================================
+#
+# FORMAT : un site par ligne, en minuscules, sans « https:// » ni « www. ».
+#   « exemple.com » inclut ses sous-domaines ; « exemple.com/chemin » ne vise que ce chemin.
+#   Pas de joker (*). Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# VOLONTAIREMENT ABSENT : linkedin.com (utile pour l'orientation et les stages).
+# Snapchat, Discord et Messenger sont dans la catégorie MESSAGERIE (pas de doublon ici).
+# Seuls les sites eux-mêmes sont visés, pas les domaines techniques partagés (images...).
+# ======================================================================================
+
+facebook.com
+fb.com
+instagram.com
+tiktok.com
+x.com
+twitter.com
+threads.net
+threads.com
+bsky.app
+tumblr.com
+bereal.com
+vk.com
+reddit.com
+# redd.it = liens courts de Reddit (sinon le blocage serait contournable)
+redd.it
+pinterest.com
+# pinterest.fr = Pinterest a un domaine par pays
+pinterest.fr
+
+# --- Autres réseaux sociaux et applis de messages anonymes
+lemon8-app.com
+yubo.live
+vsco.co
+tellonym.me
+ngl.link
+mastodon.social
+truthsocial.com
+likee.video
+kwai.com
+snackvideo.com
