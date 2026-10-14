@@ -1,0 +1,28 @@
+# ======================================================================================
+#  Interrupteurs - LISTE « EXTENSIONS » : extensions de navigateur AUTORISÉES
+#  Quand EXTENSIONS est BLOCKED (controle.txt), toutes les extensions sont interdites
+#  dans Chrome, Edge et Firefox SAUF celles listées ici. Ici, on liste des EXCEPTIONS.
+#  Si ce fichier est vide ou absent : aucune extension n'est autorisée.
+# ======================================================================================
+#
+# FORMAT : une extension par ligne :   navigateur: identifiant
+#   navigateur = chrome, edge ou firefox (un identifiant différent par navigateur)
+#   - Chrome et Edge : identifiant de 32 lettres (a à p), visible dans chrome://extensions
+#     (resp. edge://extensions) en activant le « Mode développeur ».
+#     Une extension de Chrome installée dans Edge depuis le Chrome Web Store garde le même identifiant.
+#   - Firefox : identifiant du module (ex. companion@pix.fr), visible dans about:debugging
+#     (« Ce Firefox », « UUID interne » / « ID de l'extension »).
+# Pas de joker. Les lignes commençant par # et les lignes vides sont ignorées.
+# AJOUTER : une ligne puis « Commit changes ». RETIRER : supprimer la ligne ou mettre #.
+#
+# IMPORTANT : autoriser une extension permet de L'INSTALLER ; elle n'est pas installée toute
+# seule. Les extensions sont propres à chaque compte Windows : à installer dans le profil
+# du navigateur du compte « Eleve ».
+# ======================================================================================
+
+# --- Pix Companion (extension demandée par Pix pour les certifications)
+chrome: pgpjajcmfbfdmcgjlbiengidaknopaok
+# Edge : même identifiant si l'extension est installée depuis le Chrome Web Store ;
+# à vérifier dans edge://extensions (mode développeur) sur le poste pilote.
+edge: pgpjajcmfbfdmcgjlbiengidaknopaok
+firefox: companion@pix.fr
