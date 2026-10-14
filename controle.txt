@@ -1,5 +1,5 @@
 # ======================================================================================
-#  IAGuard - FICHIER DE CONTRÔLE
+#  Interrupteurs - FICHIER DE CONTRÔLE
 #  C'est le SEUL fichier à modifier au quotidien. Les 17 postes le relisent
 #  toutes les 5 minutes (jusqu'à ~10 minutes avec le cache de GitHub).
 #  Pour modifier : bouton « crayon » dans GitHub, puis « Commit changes ».
