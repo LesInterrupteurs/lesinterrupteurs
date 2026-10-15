@@ -18,14 +18,125 @@
 #   Un fichier .exe obtenu ailleurs (clé USB, autre site absent de la liste) n'est pas bloqué.
 # ======================================================================================
 
-# --- Sites de téléchargement de logiciels
+# --- Portails de téléchargement de logiciels
 softonic.com
 malavida.com
 appwesome.com
 pdf-sprint.com
+uptodown.com
+softmany.com
+filehippo.com
+softpedia.com
+majorgeeks.com
+soft32.com
+jetelecharge.com
+telecharger.com
+brothersoft.com
+filepuma.com
+downloadcrew.com
+download.com
+sourceforge.net
+sosordi.net
+portableapps.com
+ninite.com
+chocolatey.org
+winget.run
+apps.microsoft.com
+
+# --- Sites d'actualité dont les rubriques « télécharger » ressortent dans les moteurs
+#     (bloqués en entier : les articles de ces sites ne sont plus lisibles non plus)
+clubic.com
+01net.com
+presse-citron.net
+journaldugeek.com
+justgeek.fr
+lecrabeinfo.net
+numerama.com
+frandroid.com
+scaleway.com
+futura-sciences.com/tech/telecharger
+commentcamarche.net/download
 
 # --- Navigateurs alternatifs (Opera a été installé par un élève)
 opera.com
 
 # --- Boutique d'applications Android (seul ce sous-domaine : google.com reste ouvert)
 play.google.com
+
+# --- Autres portails signalés
+usitility.com
+mediaket.net
+downloadsource.net
+operaneon.com
+download.it
+
+# --- Autres portails (recherche élargie du 14/10)
+gizmodo.com/download
+fosshub.com
+snapfiles.com
+
+# --- Applications Android (APK) installables sur PC
+apkpure.com
+apkmirror.com
+aptoide.com
+f-droid.org
+bluestacks.com
+
+# --- Navigateurs alternatifs, VPN et proxys web (sites éditeurs)
+brave.com
+vivaldi.com
+torproject.org
+protonvpn.com
+veepn.com
+nordvpn.com
+expressvpn.com
+surfshark.com
+cyberghostvpn.com
+privateinternetaccess.com
+windscribe.com
+hide.me
+hotspotshield.com
+tunnelbear.com
+mullvad.net
+atlasvpn.com
+ipvanish.com
+purevpn.com
+vyprvpn.com
+zenmate.com
+urban-vpn.com
+hola.org
+psiphon.ca
+getlantern.org
+speedify.com
+strongvpn.com
+torguard.net
+ivpn.net
+vpnunlimited.com
+keepsolid.com
+betternet.co
+hidemyass.com
+croxyproxy.com
+proxysite.com
+kproxy.com
+
+# --- Portails francophones (recherche élargie : France, Belgique, Suisse, Canada)
+logitheque.com
+lelogicielgratuit.com
+mesprogrammes.net
+toucharger.com
+znsoft.fr
+app-logiciel.fr
+logicielstelecharger.com
+telechargement-legal.org
+telecharger.org
+
+# --- Portails européens et internationaux
+cnet.com/download
+informer.com
+freewarefiles.com
+filehorse.com
+filecluster.com
+tucows.com
+winstall.app
+programas-gratis.net
+gratis.it/canali/software
